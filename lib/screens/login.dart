@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:technical_interview/constants/color.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -10,8 +11,29 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-
+    return Scaffold(
+      body: Container(
+        height: MediaQuery.sizeOf(context).height,
+        width: MediaQuery.sizeOf(context).width,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+              colors: [AppColors.darkBlue, AppColors.darkGray],
+              begin: Alignment.bottomRight,
+              end: Alignment.topLeft),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 30),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                "Login",
+                style: TextStyle(color: Colors.white),
+              )
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
