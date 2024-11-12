@@ -21,15 +21,27 @@ class _LoginScreenState extends State<LoginScreen> {
               begin: Alignment.bottomRight,
               end: Alignment.topLeft),
         ),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30),
+        child:  Padding(
+          padding: EdgeInsets.symmetric(horizontal: 30),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
                 "Login",
+                style: TextStyle(color: Colors.white,fontSize: 40,fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 10,),
+              Text(
+                "Please enter your valid phone number",
                 style: TextStyle(color: Colors.white),
-              )
+              ),
+              Text(
+                "We will send you a 4-digit code to verify",
+                style: TextStyle(color: Colors.white),
+              ),
+              const SizedBox(height: 20,),
+              
+              const SizedBox(height: 20,),
             ],
           ),
         ),
