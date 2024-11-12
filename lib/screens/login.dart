@@ -56,7 +56,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Icon(Icons.flag,color: Colors.white),
+                        Icon(Icons.flag, color: Colors.white),
                         const SizedBox(
                           width: 10,
                         ),
@@ -64,7 +64,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           "(+1)",
                           style: TextStyle(color: Colors.white),
                         ),
-                        Icon(Icons.arrow_drop_down,color: Colors.white),
+                        Icon(Icons.arrow_drop_down, color: Colors.white),
                         const SizedBox(
                           width: 8,
                         ),
@@ -96,6 +96,58 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               const SizedBox(
                 height: 20,
+              ),
+              Container(
+                width: MediaQuery.sizeOf(context).width / 2,
+                height: 50,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(30),
+                  gradient: LinearGradient(
+                    colors: [AppColors.pink, AppColors.purple],
+                  ),
+                ),
+                child: TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Submit',
+                    style: TextStyle(color: Colors.white, fontSize: 16),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 50,
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.white),
+                  borderRadius: BorderRadius.circular(50),
+                ),
+                child: Padding(
+                  padding: EdgeInsets.all(10),
+                  child: Text(
+                    "OR",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 50,
+              ),
+              Text(
+                'Login Using',
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Container(
+                child: Center(
+                  child: Row(
+                    children: [
+                      In
+                    ],
+                  ),
+                ),
               ),
             ],
           ),
